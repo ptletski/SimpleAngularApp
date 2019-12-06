@@ -1,0 +1,11 @@
+---
+applications:
+- name: fcdt-Sample-ng
+  instances: 1
+  memory: 1G
+  disk_quota: 512M
+  buildpacks: 
+    - staticfile_buildpack
+  stack: cflinuxfs3
+  health-check-type: process
+  path: .\dist\SimpleAngularApp
